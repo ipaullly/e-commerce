@@ -8,7 +8,7 @@
 html{
     font-size: 10px;
     font-family: 'Fredoka One', cursive;
-    color: #eee;
+    color: #111111;
 }
 
 body{
@@ -24,7 +24,7 @@ section{
 
 a{
     text-decoration: none;
-    color: #eee;
+    color: #111111;
 }
 
 p{
@@ -51,7 +51,7 @@ img{
 }
 .section-heading h1{
     font-size: 3.5rem;
-    color: rgb(255, 255, 255, .3);
+    color: rgba(31, 27, 27, 0.3);
     text-transform: uppercase;
     font-weight: 300;
     position: relative;
@@ -64,7 +64,7 @@ img{
     bottom: -.5rem;
     left: 50%;
     transform: translateX(-50%);
-    background-color: rgb(255, 255, 255, 0.75);
+    background-color: rgba(34, 32, 32, 0.75);
 }
 .section-heading h1::before{
     width: 10rem;
@@ -98,7 +98,7 @@ header{
     position: fixed;
     top: -100vh;
     z-index: 50;
-    background-color: #16162d;
+    background-color: #94c7d0;
     border-bottom-right-radius: 100%;
     border-bottom-left-radius: 100%;
     transition: all 650ms cubic-bezier(1, 0, 0, 1);
@@ -125,7 +125,7 @@ li{
 
 .nav-link:hover,
 .nav-link:focus{
-    background: linear-gradient(to top, rgb(199, 172, 21), #8B008B);
+    background: linear-gradient(to top, #1F2833, #C5C6C7);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -154,7 +154,7 @@ li{
 }
 
 .bar{
-    background: linear-gradient(to right, rgb(199, 172, 21), #8B008B);
+    background: linear-gradient(to right, #0B0C10, #45A29E);
     width: 100%;
     height: 4px;
     border-radius: .8rem;
@@ -193,8 +193,8 @@ li{
 
 .landing-text h1{
     font-size: 15rem;
-    font-family: 'Concert One', san Georgia       ;
-    background: linear-gradient(to top, rgb(199, 172, 21), #8B008B);
+    font-family: 'Concert One', san Georgia;
+    background: linear-gradient(to top, #0B0C10, #45A29E);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     padding: 1rem;
@@ -241,8 +241,8 @@ li{
     font-size: 5rem;
     transition: color 650ms;
 }
-.fa-facebook-square:hover{
-    color: #4267b2;
+.fa-github:hover{
+    color: #4078c0;
 }
 .fa-twitter-square:hover{
     color: #38a1f3;
@@ -275,14 +275,14 @@ li{
 .icon-container{
     width: 10rem;
     height: 10rem;
-    border: 3px solid rgb(199, 172, 21);
-    background-color: #8B008B;
+    border: 3px solid #45A29E;
+    background-color: #C5C6C7;
     margin-bottom: 2rem;
     display: flex;
     transform: rotate(45deg);
 }
 .icon-container i{
-    color: rgb(199, 172, 21);
+    color: #1F2833;
     font-size: 5rem;
     margin: auto;
     transform: rotate(-45deg);
@@ -332,9 +332,9 @@ li{
 /*End Portfolio */
 /*Start timeline*/
 .timeline ul{
-    border-left: 4px solid #ffe838;
+    border-left: 4px solid #45A29E;
     border-radius: .8rem;
-    background-color: rgba(0,0,0,0.05);
+    background-color: rgba(0, 0, 0, 0.132);
     margin: 0 auto;
     position: relative;
     padding: 5rem;
@@ -376,7 +376,7 @@ li{
 }
 .timeline .date::after{
     content: '';
-    box-shadow: 0 0 0 4px #cd57bc;
+    box-shadow: 0 0 0 4px #66fcf1;
     border-radius: 100%;
     left: -1rem;
     height: 1.5rem;
@@ -386,7 +386,7 @@ li{
 /*End timeline*/
 /*Start contact*/
 .contact{
-    background-color: #221e3f;
+    background-color: #45A29E;
 }
 form{
     width: 70%;
@@ -402,11 +402,11 @@ textarea{
     padding: 1rem;
     margin-bottom: 5px;
     border: none;
-    outline-color: #fd57bf;
+    outline-color: rgba(253, 87, 191, 0);
 }
 input[type="submit"]{
     width: initial;
-    background-color: #fd57bf;
+    background-color: #1f2833;
     color: #eee;
     padding: 1rem 2rem;
     border-radius: .8rem;
@@ -415,16 +415,17 @@ input[type="submit"]{
 }
 input[type="submit"]:hover{
     color: #221e3f;
-    background-color: #ffe838;
+    background-color: #c5c6c7;
 }
 /*End contact*/
 /*Start footer*/
 .copyright{
     width: 100%;
     text-align: center;
-    background-color: #16162d;
+    background-color: #0B0C10;
     padding: 2rem 0;
     position: relative;
+    color: #eee;
 }
 .up{
     position: absolute;
@@ -518,6 +519,38 @@ input[type="submit"]:hover{
         font-size: 8rem;
     }
     .landing-text h6{
-        
+        font-size: 1.4rem;
+    }
+    .nav-link{
+        font-size: 3.5rem;
+    }
+    .about .container{
+        flex-direction: column;
+    }
+    .profile-img{
+        margin: 0 0 7rem 0;
+        order: 1;
+    }
+    .portfolio-item{
+        flex-direction: column;
+    }
+    .portfolio-img{
+        margin: 0 0 2rem 0;
+    }
+    .portfolio-description{
+        margin: 0;
+        order: 2;
+    }
+    .timeline p{
+        font-size: 1.5rem;
+    }
+    .timeline .date::before{
+        font-size: 1.4rem;
+    }
+    form{
+        width: 100%;
+    }
+    .up{
+        right: 2rem;
     }
 }
