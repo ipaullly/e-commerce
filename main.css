@@ -197,7 +197,7 @@ li{
     background: linear-gradient(to top, #0B0C10, #45A29E);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    padding: 1rem;
+    padding: 5rem;
     user-select: none;
 }
 .landing-text h6{
@@ -230,6 +230,8 @@ li{
 .profile-img{
     flex: 1;
     margin-right: 5rem;
+    max-width:40%;
+    height:auto;
 }
 .about-details{
     flex: 1;
@@ -528,7 +530,10 @@ input[type="submit"]:hover{
         flex-direction: column;
     }
     .profile-img{
-        margin: 0 0 7rem 0;
+        margin: 2rem 0 7rem 0;
+        order: 2;
+    }
+    .about-details{
         order: 1;
     }
     .portfolio-item{
