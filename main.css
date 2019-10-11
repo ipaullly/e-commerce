@@ -7,7 +7,7 @@
 
 html{
     font-size: 10px;
-    font-family: 'Fredoka One', cursive;
+    font-family: 'Raleway', cursive;
     color: #111111;
 }
 
@@ -29,7 +29,7 @@ a{
 
 p{
     font-size: 1.8rem;
-    font-weight: 300;
+    font-weight: 100;
 }
 
 img{
@@ -118,7 +118,7 @@ li{
 }
 
 .nav-link{
-    font-family: 'Concert One', cursive;
+    font-family: 'Forum', cursive;
     font-size: 5rem;
     padding: 1rem;
 }
@@ -318,6 +318,15 @@ li{
     text-transform: uppercase;
     font-weight: 300;
     opacity: 0.3;
+}
+.portfolio-description p{
+    margin: 2rem;
+}
+.portfolio-description a{
+    padding: 0 3rem 0 0;
+}
+.portfolio-description a:hover{
+    color:#45A29E;
 }
 .portfolio-description .cta{
     display: inline-block;
