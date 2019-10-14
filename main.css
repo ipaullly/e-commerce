@@ -405,13 +405,18 @@ form{
 }
 form label{
     font-size: 1.5rem;
+    margin-left: 4px;
+}
+.display-none {
+    display: none;
 }
 input,
-select,
 textarea{
     width: 100%;
+    border-radius: .8rem;
     padding: 1rem;
-    margin-bottom: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     border: none;
     outline-color: rgba(253, 87, 191, 0);
 }

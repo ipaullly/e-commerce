@@ -215,14 +215,14 @@
                 <h1>Contact</h1>
                 <h6>Ping me!</h6>
             </div>
-            <form action="" data-aos="fade-up" data-aos-delay="200">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" placeholder="Enter your name please" required>
-                <label for="email">Email:</label>
-                <input type="text" id="name" name="name" placeholder="Enter your email please" required>
-                <label for="subject">Subject:</label>
-                <textarea name="subject" id="subject" cols="10" rows="10"></textarea>
-                <input type="submit" value="Submit">
+            <form action="mailto:ipaully22@gmail.com" id="contact-form" data-aos="fade-up" data-aos-delay="200" method="post" enctype="text/plain">
+                <label for="name">Name</label>
+                <input type="text" id="inputName" name="name" placeholder="Enter your name ">
+                <label for="email">Email</label>
+                <input type="text" id="inputEmail" name="email" placeholder="Enter your email">
+                <label for="subject">Subject</label>
+                <textarea name="message" id="inputMessage" cols="10" rows="10" placeholder="Type message here..."></textarea>
+                <input type="submit" value="Submit" name="submit">
             </form>
         </div>
     </section>
@@ -234,6 +234,7 @@
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="main.js"></script>
 </body>
 </html>
