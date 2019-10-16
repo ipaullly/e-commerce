@@ -215,15 +215,16 @@
                 <h1>Contact</h1>
                 <h6>Ping me!</h6>
             </div>
-            <form action="mailto:ipaully22@gmail.com" id="contact-form" data-aos="fade-up" data-aos-delay="200" method="post" enctype="text/plain">
+            <form action="https://script.google.com/macros/s/AKfycbxMyFvHW9zEUd8-PXroyDjK9tFvCFjmwHog8_yGMA/exec" id="contact-form" data-aos="fade-up" data-aos-delay="200" class="gform" method="POST">
                 <label for="name">Name</label>
                 <input type="text" id="inputName" name="name" placeholder="Enter your name ">
                 <label for="email">Email</label>
-                <input type="text" id="inputEmail" name="email" placeholder="Enter your email">
+                <input type="text" id="inputEmail" name="email" placeholder="Enter your email" required>
                 <label for="subject">Subject</label>
                 <textarea name="message" id="inputMessage" cols="10" rows="10" placeholder="Type message here..."></textarea>
-                <input type="submit" value="Submit" name="submit">
+                <input type="submit" value="Submit" onclick="toast()">
             </form>
+            <div id="snackbar">message sent </div>
         </div>
     </section>
     <footer class="copyright">
@@ -234,7 +235,14 @@
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="main.js"></script>
+    <script data-cfasync="false" type="text/javascript" src="form-submission-handler.js"></script>
+    <script>
+        function toast() {
+            var x = document.getElementById("snackbar");
+            x.className = "show";
+            setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+        }
+    </script>
 </body>
 </html>
