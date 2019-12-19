@@ -211,6 +211,8 @@ li{
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: white;
+    border-radius: 1.3em;
 }
 
 .about-heading{
@@ -229,7 +231,7 @@ li{
 }
 .profile-img{
     flex: 1;
-    border-radius: 50%;
+    border-radius: 13em;
     margin-right: 5rem;
     max-width:30%;
     height:auto;
@@ -520,6 +522,11 @@ input[type="submit"]:hover{
   }
 /*end toast*/
 /*Media queries*/
+@media only screen and (min-width: 768px) and (max-width: 1200px){
+    .about .container{
+        padding: 40px 10px;
+    }    
+}
 @media screen and (max-width: 768px) {
     body{
         background: url("images/sitebg.jpg") no-repeat center fixed;
@@ -539,6 +546,9 @@ input[type="submit"]:hover{
     }
     .nav-link{
         font-size: 4.5rem;
+    }
+    .about .container{
+        padding: 40px 10px;
     }
     .about-heading h1{
         font-size: 8rem;
@@ -586,6 +596,7 @@ input[type="submit"]:hover{
     }
     .about .container{
         flex-direction: column;
+        padding: 40px 10px 0;
     }
     .profile-img{
         margin: 2rem 0 7rem 0;
