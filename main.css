@@ -44,6 +44,10 @@ img{
     height: 100%;
     margin: 0 auto;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 .section-heading{
     text-align: center;
