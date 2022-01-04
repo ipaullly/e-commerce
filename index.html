@@ -309,7 +309,7 @@
       <div class="up" id="up">
         <i class="fas fa-chevron-up"></i>
       </div>
-      <p>&copy; 2021 Paul Morogo</p>
+      <p>&copy; <span id="year"></span> Paul Morogo</p>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -320,8 +320,12 @@
       src="form-submission-handler.js"
     ></script>
     <script>
+      
+      let yearSpan = document.getElementById('year');
+      let newDate = new Date().getFullYear()
+      yearSpan.innerHTML = newDate;
       function toast() {
-        var x = document.getElementById('snackbar');
+        let x = document.getElementById('snackbar');
         x.className = 'show';
         setTimeout(function () {
           x.className = x.className.replace('show', '');
