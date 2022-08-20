@@ -12,7 +12,8 @@
   --white: #fff;
   --gray: #767575;
   --gray-dark: #434242;
-  --primary: #a90000;
+  /* --primary: #a90000; */
+  --primary: #FE0000;
   --secondary: #000;
   --success: #28a745;
   --info: #17a2b8;
@@ -259,8 +260,9 @@ header {
 
 .landing-text .landing-text-title {
   font-size: 15rem;
+  text-transform: uppercase;
   color: var(--primary);
-  padding: 5rem;
+  padding: 5rem 0 1rem 0;
   user-select: none;
 }
 
@@ -1095,7 +1097,7 @@ header {
 }
 
 .card-bus-carousel .my-bus-card:nth-child(2):before {
-  content: "Home Page";
+  content: "Trips Page";
   /* position: absolute;
     bottom: -10%;
     left: 50%; */
@@ -1107,7 +1109,7 @@ header {
 }
 
 .card-bus-carousel .my-bus-card:nth-child(3):before {
-  content: "Trips Page";
+  content: "Seat Selection Page";
   /* position: absolute;
     bottom: -10%;
     left: 50%; */
